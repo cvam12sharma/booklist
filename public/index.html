@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-500">
+    <div class="container mx-auto mt-4">
+        <h1 class="text-4xl text-center py-4">
+            <i class="fas fa-book-open text-blue-700"></i></i> My<span class="text-primary">Book</span>List</h1>
+        <form id="book-form" class="px-8 py-4 bg-blue-500 rounded shadow-lg">
+            <div class="mb-4">
+                <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Title</label>
+                <input type="text" id="title" class="form-input rounded w-full py-2 px-3" placeholder="Title">
+            </div>
+            <div class="mb-4">
+                <label for="author" class="block text-gray-700 text-sm font-bold mb-2">Author</label>
+                <input type="text" id="author" class="form-input rounded w-full py-2 px-3" placeholder="Author">
+            </div>
+            <div class="mb-4">
+                <label for="isbn" class="block text-gray-700 text-sm font-bold mb-2">ISBN#</label>
+                <input type="text" id="isbn" class="form-input rounded w-full py-2 px-3" placeholder="ISBN#">
+            </div>
+            <input type="submit" value="Add Book" class="btn  bg-red-700   btn-primary btn-block py-2">
+        </form>
+        <table class=" w-full  mt-5 ">
+            <thead class="bg-blue-500">
+                <tr class="border
+                ">
+                    <th class="px-4 py-2 ">Title</th>
+                    <th class="px-4 py-2 ">Author</th>
+                    <th class="px-4 py-2 ">ISBN#</th>
+                    <th class="px-4 py-2 "></th>
+                </tr>
+            </thead>
+            <tbody id="book-list" class="border font-semibold text-center"></tbody>
+        </table>
+    </div>
+    <script src ="app.js"></script>
+</body>
+</html>
